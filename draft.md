@@ -4,7 +4,14 @@ https://hackmag.com/security/reach-the-root/
 
 ## boot2root
 
-On s'est balader sur le forum et quentin a laissé des logs sur son poste sur lequel se trouve un mot de passe en clair. 
+ip addr show | grep inet
+nmap -v -sn 192.168.0.26/24 | grep "is up" -B1
+
+Ensuite connexion à :
+
+http://192.168.0.35
+
+On s'est balader sur le forum (https://192.168.0.35/forum/) et quentin a laissé des logs sur son poste sur lequel se trouve un mot de passe en clair. 
 
 lmezard mot de passe : !q\]Ej?*5K5cy*AJ
 email : laurie@borntosec.net 
@@ -13,9 +20,6 @@ Ce même mot de passe nous permet d'accéder à la boîte mail de Laurie, on y t
 
 database : root / Fg-'kKXBj87E:aJ$
 Mail : qudevide@mail.borntosec.net
-
-
-
 
 
 Depuis phpmyadmin on a crée un fichier PHP dans /templates_c (le forum est un projet open source de MyLittleForum donc repo dispo sur github, vérification de la structure et des dossiers dans ce repo qui doivent ressembler à ce qui est effectivement sur le serveur).
