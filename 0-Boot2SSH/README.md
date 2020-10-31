@@ -118,6 +118,8 @@ Nous obtenons les identifiants suivants:
 
 Nous accedons a la VM (directement, pas en SSH) grace aux identifiants precedemment trouves.
 
+_**NOTE:** Ces identifiants nous permettent egalement d'acceder au serveur ftp pour telecharger le binaire._
+
 Une enigme avec un binaire nous attend pour la suite du jeu de piste.
 
 <!-- EXPLICATIONS MANQUANTES -->
