@@ -8,11 +8,11 @@ jergauth : https://github.com/jeremie-gauthier
 
 ## Liste des exploits
 
-Les exploits sont des continuations de la Branche #0 (web2ssh)
+Les exploits sont des continuations de la Branche 0 ([web2ssh](0-Boot2SSH/README.md))
 
-- 1# Intended route
-- 2# Dirty COW (Copy-on-Write)
-- 3# Shellcode variant
+- [1# Intended route](1-IntendedRoute/README.md)
+- [2# Dirty COW (Copy-on-Write)](2-DirtyCOW/README.md)
+- [3# Shellcode variant](3-ShellcodeVariant/README.md)
 
 ## Infos additionnelles 
 
