@@ -12,6 +12,7 @@ Les exploits sont des continuations de la Branche #0 (web2ssh)
 
 - 1# Intended route
 - 2# Dirty COW (Copy-on-Write)
+- 3# Shellcode variant
 
 ## Infos additionnelles 
 
