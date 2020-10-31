@@ -95,3 +95,37 @@ Autres pistes :
 > CRLF
 > XSS
 > Reponse splittering
+
+#####  ###################################
+##### Documentation Dirty Cow ############
+#####  ###################################
+
+
+https://github.com/dirtycow/dirtycow.github.io/blob/master/pokemon.c
+https://www.exploit-db.com/exploits/40616
+
+
+#####  ###################################
+##### Challenge fun ######################
+#####  ###################################
+
+password : .......wnage
+
+les 7 autres lettres devant un return dans le fichier fun : p 
+
+t(23) I(86) e(371) r(406) a(429) h(490) p(617)
+
+tIerahpwnage
+hpeaIrwnage
+
+sha-256
+
+I //6
+h //38
+e //57
+a //116
+r //369
+t //522
+p //737
+
+Iheartpwnage
