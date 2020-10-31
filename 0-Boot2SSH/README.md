@@ -122,7 +122,26 @@ _**NOTE:** Ces identifiants nous permettent egalement d'acceder au serveur ftp p
 
 Une enigme avec un binaire nous attend pour la suite du jeu de piste.
 
-<!-- EXPLICATIONS MANQUANTES -->
+```
+password : .......wnage
+
+les 7 autres lettres devant un return dans le fichier fun : p
+
+t(23) I(86) e(371) r(406) a(429) h(490) p(617)
+
+tIerahpwnage
+hpeaIrwnage
+
+I //6
+h //38
+e //57
+a //116
+r //369
+t //522
+p //737
+
+Iheartpwnage
+```
 
 Nous finissons par trouver:
 `Iheartpwnage`
